@@ -1,11 +1,11 @@
 /* eslint-disable */
 export default {
-  displayName: 'my-lib',
+  displayName: 'my-lib-vite',
   preset: '../../jest.preset.js',
   transform: {
     '^(?!.*\\.(js|jsx|ts|tsx|css|json)$)': '@nx/react/plugins/jest',
     '^.+\\.[tj]sx?$': ['babel-jest', { presets: ['@nx/react/babel'] }],
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../coverage/libs/my-lib',
+  coverageDirectory: '../../coverage/libs/my-lib-vite',
 };

@@ -1,19 +1,19 @@
 {
-  "name": "my-lib-e2e",
+  "name": "my-lib-vite-e2e",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/my-lib-e2e/src",
+  "sourceRoot": "apps/my-lib-vite-e2e/src",
   "projectType": "application",
   "targets": {
     "e2e": {
       "executor": "@nx/cypress:cypress",
       "options": {
-        "cypressConfig": "apps/my-lib-e2e/cypress.config.ts",
-        "devServerTarget": "my-lib-rollup:storybook",
+        "cypressConfig": "apps/my-lib-vite-e2e/cypress.config.ts",
+        "devServerTarget": "my-lib-vite:storybook",
         "testingType": "e2e"
       },
       "configurations": {
         "ci": {
-          "devServerTarget": "my-lib-rollup:static-storybook:ci"
+          "devServerTarget": "my-lib-vite:static-storybook:ci"
         }
       }
     },
@@ -21,10 +21,10 @@
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/my-lib-e2e/**/*.{js,ts}"]
+        "lintFilePatterns": ["apps/my-lib-vite-e2e/**/*.{js,ts}"]
       }
     }
   },
   "tags": [],
-  "implicitDependencies": ["my-lib-rollup"]
+  "implicitDependencies": ["my-lib-vite"]
 }

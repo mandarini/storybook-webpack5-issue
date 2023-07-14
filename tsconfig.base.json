@@ -15,7 +15,14 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@sbwebpack/my-lib": ["libs/my-lib/src/index.ts"]
+      "@sbwebpack/my-lib-nonbuildable": [
+        "libs/my-lib-nonbuildable/src/index.ts"
+      ],
+      "@sbwebpack/my-lib-rollup": ["libs/my-lib-rollup/src/index.ts"],
+      "@sbwebpack/my-lib-rollup-with-sb-vite": [
+        "libs/my-lib-rollup-with-sb-vite/src/index.ts"
+      ],
+      "@sbwebpack/my-lib-vite": ["libs/my-lib-vite/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
