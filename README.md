@@ -1,5 +1,13 @@
 # `@storybook/react-webpack5` issue with libraries
 
+# UPDATE
+
+Install `core-js` and it works.
+
+Keeping the rest for the record.
+
+# Outdated info from here on:
+
 ## The problem
 
 `@storybook/react-webpack5` does not work with libraries. The error that is thrown is:
